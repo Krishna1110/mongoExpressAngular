@@ -1,0 +1,22 @@
+<h2>{{bill.cname}}</h2>
+
+<div>{{bill.bill_amount}}</div>
+<div>{{bill.bill_date}}</div>
+<h3>Items</h3>
+<span ng-show="bill.items.length == 0">No Item</span>
+<ul class="unstyled" ng-hide="bill.items.length == 0">
+    <li ng-repeat="item in bill.items">
+        <span>{{item.medicine_name}}</span>
+        <span>{{item.provider}}</span>
+        <span>{{item.quantity}}</span>
+        <span>{{item.rate}}</span>
+
+    </li>
+</ul>
+
+<form ng-submit="edit()" class="form-horizontal">
+    <div class="form-actions">
+        <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-primary" ng-click="delete()">Delete</button>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+<h1>{{bill.cname}}</h1>
+<form ng-submit="save()">
+    Customer Name <input type="text" ng-model="bill.cname"/>
+    Date <input type="text" ng-model="bill.bill_date"/>
+    <div ng-repeat="(count, item) in bill.items">
+        Item {{count}}:   Medicine Name<input type="text" ng-model="item.medicine_name"/>
+        Provider<input type="text" ng-model="item.provider"/>
+        Quantity<input type="text" ng-model="item.quantity"/>
+        Rate<input type="text" ng-model="item.rate"/>
+    </div>
+
+    <input type="text" ng-model="bill.bill_amount"/>
+
+    <button type="submit" value="Save"/>
+</form>

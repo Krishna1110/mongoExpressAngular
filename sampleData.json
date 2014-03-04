@@ -1,0 +1,42 @@
+{
+"1":{
+// "id":1,
+"cname":"Krishna Kumar Tiwari",
+"bill_amount":200,
+"bill_date" : 1337025900000,
+"items" :[
+{
+"medicine_name":"Liv. Fit",
+"provider":"Himalaya",
+"quantity":2,
+"rate":75
+},
+{
+"medicine_name":"Sona Chandi",
+"provider":"Dabar",
+"quantity":1,
+"rate":50
+}
+]
+},
+"2":{
+// "id":2,
+"cname":"Bhavin",
+"bill_amount":100,
+"bill_date" : 1336990500000,
+"items" :[
+{
+"medicine_name":"Electrol",
+"provider":"Ranbaxy",
+"quantity":2,
+"rate":25
+},
+{
+"medicine_name":"Sona Chandi",
+"provider":"Dabar",
+"quantity":1,
+"rate":50
+}
+]
+}
+}
